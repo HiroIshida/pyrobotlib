@@ -49,7 +49,7 @@ class SignedDistanceField:
 
     def sd(self, p):
         if self.isInsideDefBox(p):
-            return self.itp(p)
+            return self.itp(p).item()
         else:
             return float('inf')
 
